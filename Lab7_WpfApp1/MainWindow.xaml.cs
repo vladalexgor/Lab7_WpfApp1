@@ -127,17 +127,5 @@ namespace Lab7_WpfApp1
                 File.WriteAllText(saveFileDialog.FileName, textBox.Text);
             }
         }
-
-        //private void ExitCanExecute(object sender, CanExecuteRoutedEventArgs e)
-        //{
-        //    if (textBox != null && textBox.Text.Length == 0)
-        //    {
-        //        e.CanExecute = true;
-        //    }
-        //    else
-        //    {
-        //        e.CanExecute = false;
-        //    }
-        //}
     }
 }
