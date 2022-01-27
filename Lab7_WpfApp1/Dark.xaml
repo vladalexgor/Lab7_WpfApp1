@@ -2,9 +2,34 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Style x:Key="WindowStyle">
         <Setter Property="Control.Background" Value="Black"/>
+        <Setter Property="Control.Foreground" Value="White"/>
     </Style>
     <Style x:Key="TextBoxStyle" BasedOn="{StaticResource WindowStyle}">
-        <Setter Property="TextBox.Foreground" Value="White"/>
         <Setter Property="TextBox.BorderBrush" Value ="White"/>
+    </Style>
+    <Style x:Key="ToolBarTrayStyle" BasedOn="{StaticResource WindowStyle}">
+        <Setter Property="ToolBarTray.Background" Value="Black"/>
+    </Style>
+    <Style x:Key="ToolBarStyle" BasedOn="{StaticResource WindowStyle}">
+        <Setter Property="ToolBar.Background" Value="Black"/>
+        <Setter Property="ToolBar.BorderBrush" Value="White"/>
+    </Style>
+    <Style x:Key="MenuStyle" BasedOn="{StaticResource WindowStyle}">
+        <Setter Property="Menu.Background" Value="Black"/>
+    </Style>
+    <Style x:Key="MenuItemStyle" BasedOn="{StaticResource WindowStyle}">
+        <Setter Property="MenuItem.Background" Value="Black"/>
+        <Setter Property="MenuItem.BorderBrush" Value="Black"/>        
+    </Style>
+    <Style x:Key="ComboBoxStyle" BasedOn="{StaticResource WindowStyle}">
+        <Setter Property="ComboBox.Background" Value="Black"/>
+        <Setter Property="ComboBox.BorderBrush" Value="White"/>
+    </Style>
+    <Style x:Key="RadioButtonStyle" BasedOn="{StaticResource WindowStyle}">
+        <Setter Property="RadioButton.Foreground" Value="White"/>
+        <Setter Property="RadioButton.BorderBrush" Value="White"/>
+    </Style>
+    <Style x:Key="ButtonStyle" BasedOn="{StaticResource WindowStyle}">
+        <Setter Property="Button.BorderBrush" Value="White"/>
     </Style>
 </ResourceDictionary>
