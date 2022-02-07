@@ -30,7 +30,8 @@ namespace Lab7_WpfApp1
             styleBox.SelectionChanged += ThemeChange;
             styleBox.SelectedIndex = 0;
         }
-                private void ThemeChange(object sender, SelectionChangedEventArgs e)
+
+        private void ThemeChange(object sender, SelectionChangedEventArgs e)
         {
             int styleIndex = styleBox.SelectedIndex;
             Uri uri = new Uri("Light.xaml", UriKind.Relative);
@@ -41,24 +42,6 @@ namespace Lab7_WpfApp1
             ResourceDictionary resource = Application.LoadComponent(uri) as ResourceDictionary;
             Application.Current.Resources.Clear();
             Application.Current.Resources.MergedDictionaries.Add(resource);
-        }
-
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            string fontName = (sender as ComboBox).SelectedItem as string;
-            if (textBox != null)
-            {
-                textBox.FontFamily = new FontFamily(fontName);
-            }
-        }
-
-        private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
-        {
-            string fontSize = (sender as ComboBox).SelectedItem as string;
-            if (textBox != null)
-            {
-                textBox.FontSize = Convert.ToDouble(fontSize);
-            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
